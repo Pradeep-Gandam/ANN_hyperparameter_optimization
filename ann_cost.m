@@ -3,9 +3,9 @@ function [cost] = ann_cost(x)
 % x = [Number of Hidden Layers, hiddenLayerSize, Learning Rate]
  
 % Load input data (factors)
-factors = csvread('D:\PRADEEP\ANN_hyperparameter optimization\INPUT\factors.csv');
+factors = csvread('independent_variables_file_name.csv');
 % Load target data (responses)
-responses = csvread('D:\PRADEEP\ANN_hyperparameter optimization\INPUT\sresponses.csv');
+responses = csvread('dependent_variables_file_name.csv');
  
 % Set decision variables
 hiddenLayers = round(x(1));        % Number of Hidden Layers
